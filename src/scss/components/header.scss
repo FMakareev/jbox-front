@@ -1,0 +1,253 @@
+
+.n_header {
+
+  $this: &;
+
+  &_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  // START TOP
+  &_top {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #3A3A3A;
+    overflow: hidden;
+  }
+
+  &_top-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &_logo-wrapper {
+    margin-right: 40px;
+  }
+
+  &_logo-img {
+  }
+
+  // START SEARCH
+
+  &_search-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &_search-text-field {
+    padding-top: 7px !important;
+    padding-bottom: 7px !important;
+
+    @media(min-width: 1200px) {
+      min-width: 280px;
+    }
+  }
+
+  &_search-btn {
+
+  }
+
+  // END SEARCH
+
+  &_top-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  // START TOP REGION
+  &_top-region {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+  }
+
+  &_top-region-label {
+    @extend .typo;
+    color: rgba(255, 255, 255, 0.5);
+    margin-right: 12px;
+  }
+
+  &_top-region-value {
+    @extend .typo;
+    color: #ffffff;
+    text-decoration: underline;
+  }
+
+  // END TOP REGION
+
+
+  // START TOP BASKET
+  &_top-basket {
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-top: -15px;
+    margin-bottom: -15px;
+    background-color: #FC3B00;
+  }
+
+  &_top-basket-icon-wrapper {
+    width: 32px;
+    overflow: hidden;
+    margin-right: 10px;
+  }
+
+  &_top-basket-icon {
+  }
+
+  &_top-basket-label {
+    @extend .typo;
+    @extend .typo_s;
+    @extend .typo--white;
+    text-align: left;
+    line-height: 16px;
+  }
+
+  &_top-basket-label-text {
+  }
+
+  &_top-basket-label-count {
+  }
+
+  // END TOP BASKET
+  // END TOP
+
+  // START BOTTOM
+  // START TOP BASKET
+
+
+  &_bottom {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #FFFFFF;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  }
+
+  &_bottom-left {
+
+  }
+
+  &_nav {
+  }
+
+  &_nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &_nav-item {
+
+  }
+
+  &_nav-link {
+    @extend .typo;
+    @extend .typo--bold;
+    @extend .typo--gray;
+    position: relative;
+    display: block;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-decoration: none;
+
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 8px;
+      transform: translate(-8px, -50%);
+      display: block;
+      width: 12px;
+      height: 6px;
+      background-image: url('~/assets/images/arrow.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+
+    &:hover, &#{$this}_nav-link--active {
+      color: #f05a28;
+
+      &:before {
+        background-image: url('~/assets/images/arrowActive.svg');
+      }
+    }
+
+    &--all {
+      padding-right: 32px;
+
+      &:before {
+        background-image: url('~/assets/images/burger.svg');
+        width: 12px;
+        height: 12px;
+      }
+
+      &:hover, &#{$this}_nav-link--active {
+        color: #f05a28;
+
+        &:before {
+          background-image: url('~/assets/images/burgerActive.svg');
+        }
+      }
+    }
+
+    &--service {
+      padding-left: 30px;
+
+      &:before {
+        background-image: url('~/assets/images/serviceIcon.svg');
+        width: 24px;
+        height: 14px;
+      }
+
+      &:hover, &#{$this}_nav-link--active {
+        color: #f05a28;
+
+        &:before {
+          background-image: url('~/assets/images/serviceIconActive.svg');
+        }
+      }
+    }
+
+
+  }
+
+
+  &_bottom-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &_bottom-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &_bottom-social-link {
+    padding-left: 6px;
+    padding-right: 6px;
+    color: #333333;
+    fill: #333333;
+
+    &:hover {
+      color: #f05a28;
+      fill: #f05a28;
+    }
+
+  }
+}

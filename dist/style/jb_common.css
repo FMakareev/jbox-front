@@ -1,0 +1,137 @@
+/* Common styles for Jboxparts v1.5 Created by IG-Studio (www.ig-studo.net) mailto: web.pro@ig-studio.net */
+
+.jb_fave {font-family: 'Avenir Next Cyr', sans-serif;}
+.jb_fira {font-family: 'Fira Sans', sans-serif;}
+
+.jb_ib {display: inline-block;}
+.jb_pr {position: relative;}
+.jb_pa {position: absolute;}
+.jb_25 {display: inline-block; width: 24.4%;}
+.jb_50 {display: inline-block; width: 49.5%;}
+.jb_100 {display: inline-block; width: 100%;}
+.jb_auto {display: inline-block; width: auto;}
+.jb_full {display: inline-block; max-width: 1200px;}
+.jb_hid {display: none;}
+/* min-height */
+.jb_mh1 {min-height: 1px;}
+.jb_mh10 {min-height: 10px;}
+.jb_mh20 {min-height: 20px;}
+.jb_mh35 {min-height: 35px;}
+.jb_mh300 {min-height: 300px;}
+.jb_mh500 {min-height: 500px;}
+.jb_mh600 {min-height: 600px;}
+/*align*/
+.jb_vm {vertical-align: middle;}
+.jb_vt {vertical-align: top;}
+.jb_vb {vertical-align: bottom;}
+.jb_tl {text-align: left;}
+.jb_tc {text-align: center;}
+.jb_tr {text-align: right;}
+.jb_tj {text-align: justify;}
+/* font styles */
+.jb_fr10, .jb_fl10, .jb_fb10 {font-size: 10px;}
+.jb_fr12, .jb_fl12, .jb_fb12 {font-size: 12px;}
+.jb_fr13, .jb_fl13, .jb_fb13 {font-size: 13px;}
+.jb_fr14, .jb_fl14, .jb_fb14 {font-size: 14px;}
+.jb_fr15, .jb_fl15, .jb_fm15, .jb_fb15 {font-size: 15px;}
+.jb_fr16, .jb_fl16, .jb_fb16 {font-size: 16px;}
+.jb_fr18, .jb_fl18, .jb_fm18, .jb_fb18 {font-size: 18px;}
+.jb_fr20, .jb_fl20, .jb_fm20, .jb_fb20 {font-size: 20px;}
+.jb_fr28, .jb_fl28, .jb_fm28, .jb_fb28 {font-size: 28px;}
+.jb_fr30, .jb_fl30, .jb_fm30, .jb_fb30 {font-size: 30px;}
+.jb_fr32, .jb_fl32, .jb_fm32, .jb_fb32 {font-size: 32px;}
+.jb_fr35, .jb_fl35, .jb_fm35, .jb_fb35 {font-size: 35px;}
+.jb_fr40, .jb_fl40, .jb_fb40 {font-size: 40px;}
+.jb_fr45, .jb_fl45, .jb_fm45, .jb_fb45 {font-size: 45px;}
+.jb_fr50, .jb_fl50, .jb_fm50, .jb_fb50 {font-size: 50px;}
+.jb_fl10, .jb_fl12, .jb_fl13, .jb_fl14, .jb_fl15, .jb_fl16, .jb_fl18, .jb_fl20, .jb_fl28, .jb_fl30, .jb_fl32, .jb_fl35, .jb_fl40, .jb_fl45 {font-weight: 300;} /* Fira Sans only!!! */
+.jb_fr10, .jb_fr12, .jb_fr13, .jb_fr14, .jb_fr15, .jb_fr16, .jb_fr18, .jb_fr20, .jb_fr28, .jb_fr30, .jb_fr32, .jb_fr35, .jb_fr40, .jb_fr45 {font-weight: 400;}
+.jb_fm15, .jb_fm18, .jb_fm20, .jb_fm28, .jb_fm30, .jb_fm32, .jb_fm35, .jb_fm45 {font-weight: 500;} /* Roboto only!!! */
+.jb_fb10, .jb_fb12, .jb_fb13, .jb_fb14, .jb_fb15, .jb_fb16, .jb_fb18, .jb_fb20, .jb_fb28, .jb_fb30, .jb_fb32, .jb_fb35, .jb_fb40, .jb_fb45, .jb_fb50 {font-weight: 700;}
+.jb_lh10 {line-height: 1em;}
+.jb_lh11 {line-height: 1.1em;}
+.jb_lh12 {line-height: 1.2em;}
+.jb_lh14 {line-height: 1.4em;}
+.jb_fud {text-decoration: underline dashed;}
+.jb_fudsel {border: none; font-size: 14px; font-weight: 300; text-decoration: underline dashed;}
+.jb_fwb{font-weight: bold}
+/*.jb_fudsela {width: 45px; border: none; font-size: 14px; font-weight: 300; text-decoration: underline dashed;}*/
+
+/*margin-top*/
+.jb_mt0 {margin-top: 0;}
+.jb_mt2 {margin-top: 2px;}
+.jb_mt3 {margin-top: 3px;}
+.jb_mt4 {margin-top: 4px;}
+.jb_mt5 {margin-top: 5px;}
+.jb_mt7 {margin-top: 7px;}
+.jb_mt10 {margin-top: 10px;}
+.jb_mt12 {margin-top: 12px;}
+.jb_mt15 {margin-top: 15px;}
+.jb_mt20 {margin-top: 20px;}
+.jb_mt25 {margin-top: 25px;}
+.jb_mt30 {margin-top: 30px;}
+.jb_mt35 {margin-top: 35px;}
+.jb_mt40 {margin-top: 40px;}
+.jb_mt50 {margin-top: 50px;}
+.jb_mt55 {margin-top: 55px;}
+.jb_mt60 {margin-top: 60px;}
+.jb_mt70 {margin-top: 70px;}
+.jb_mt80 {margin-top: 80px;}
+.jb_mt90 {margin-top: 90px;}
+.jb_mt100 {margin-top: 100px;}
+.jb_mt135 {margin-top: 135px;}
+/* marfin-left */
+.jb_ml3 {margin-left: 3px;}
+.jb_ml5 {margin-left: 5px;}
+.jb_ml8 {margin-left: 8px;}
+.jb_ml10 {margin-left: 10px;}
+.jb_ml15 {margin-left: 15px;}
+.jb_ml20 {margin-left: 20px;}
+.jb_ml25 {margin-left: 25px;}
+.jb_ml30 {margin-left: 30px;}
+.jb_ml40 {margin-left: 40px;}
+.jb_ml50 {margin-left: 50px;}
+.jb_ml60 {margin-left: 60px;}
+.jb_ml70 {margin-left: 70px;}
+.jb_ml80 {margin-left: 80px;}
+.jb_ml90 {margin-left: 90px;}
+.jb_ml100 {margin-left: 100px;}
+.jb_ml130 {margin-left: 130px;}
+/* marfin-right */
+.jb_mr3 {margin-right: 3px;}
+.jb_mr5 {margin-right: 5px;}
+.jb_mr8 {margin-right: 8px;}
+.jb_mr10 {margin-right: 10px;}
+.jb_mr15 {margin-right: 15px;}
+.jb_mr20 {margin-right: 20px;}
+.jb_mr25 {margin-right: 25px;}
+.jb_mr30 {margin-right: 30px;}
+.jb_mr40 {margin-right: 40px;}
+.jb_mr50 {margin-right: 50px;}
+.jb_mr60 {margin-right: 60px;}
+.jb_mr70 {margin-right: 70px;}
+.jb_mr80 {margin-right: 80px;}
+.jb_mr90 {margin-right: 90px;}
+.jb_mr100 {margin-right: 100px;}
+.jb_mr130 {margin-right: 130px;}
+/* marfin-bottom */
+.jb_mb2 {margin-bottom: 2px;}
+.jb_mb5 {margin-bottom: 5px;}
+.jb_mb10 {margin-bottom: 10px;}
+.jb_mb20 {margin-bottom: 20px;}
+.jb_mb30 {margin-bottom: 30px;}
+.jb_mb35 {margin-bottom: 35px;}
+.jb_mb40 {margin-bottom: 40px;}
+.jb_mb50 {margin-bottom: 50px;}
+.jb_mb60 {margin-bottom: 60px;}
+.jb_mb70 {margin-bottom: 70px;}
+.jb_mb80 {margin-bottom: 80px;}
+.jb_mb90 {margin-bottom: 90px;}
+.jb_mb100 {margin-bottom: 100px;}
+.jb_mb160 {margin-bottom: 160px;}
+/* прочие */
+.jb_cp {cursor: pointer;}
+
+
+
+.jb_pr10 {padding-right: 10px;}

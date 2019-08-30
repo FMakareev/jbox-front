@@ -1,0 +1,46 @@
+
+
+.c_breadcrumbs {
+  $this: &;
+  display: flex;
+  padding: 0;
+  margin: inherit;
+
+  &_item {
+    position: relative;
+    list-style: none;
+    padding-right: 22px;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 7px;
+      display: block;
+      width: 6px;
+      height: 12px;
+      background-image: url('../assets/images/Vector 2.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &:last-child {
+      &:after {
+        content: none;
+      }
+
+      #{$this}_link {
+        opacity: 0.5;
+        cursor: default;
+      }
+    }
+
+  }
+
+  &_link {
+    text-decoration: none;
+    color: #000000;
+  }
+
+}

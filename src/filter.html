@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="../node_modules/slim-select/dist/slimselect.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/style/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style/jb_common.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/k_main.css">
+    <link rel="stylesheet" href="./scss/category_style.scss">
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css"
+    />
+</head>
+<body>
+<div class="jb_pr k_wrapper">
+
+    <module href="/templates/header.html">
+        header
+    </module>
+
+    <div class="app app--card">
+        <div class="app__content container container--category">
+            <main class="app__main">
+
+
+                <module href="/templates/c_breadcrumbs.html">
+                    c_breadcrumbs
+                </module>
+
+
+                <div class="parts-filter_container">
+                    <img src="assets/images/OUTLANDER1000LTD.png" alt="SKI-DOO" class="parts-filter_image">
+
+                    <div class="parts-filter_card parts_card parts_card--xl">
+                        <h1 class="parts-filter_card-title">
+                            Оригинальные запчасти
+                            для квадроциклов BRP
+                        </h1>
+
+                        <div id="js_yearOfManufacture" class="parts-filter_select">
+
+                            <select class="js-select">
+                                <option data-placeholder="true">Год выпуска</option>
+                                <option value="value01">value01</option>
+                                <option value="value02">value02</option>
+                                <option value="value03">value03</option>
+                                <option value="value04">value04</option>
+                                <option value="value05">value05</option>
+                                <option value="value06">value06</option>
+                                <option value="value07">value07</option>
+                                <option value="value08">value08</option>
+                                <option value="value09">value09</option>
+                                <option value="value10">value10</option>
+                                <option value="value11">value11</option>
+                            </select>
+                        </div>
+
+                        <div id="js_selectModels" class="parts-filter_select">
+                            <select class="js-select">
+                                <option data-placeholder="true">Модельный ряд</option>
+                                <option value="value01">value01</option>
+                                <option value="value02">value02</option>
+                                <option value="value03">value03</option>
+                                <option value="value04">value04</option>
+                                <option value="value05">value05</option>
+                                <option value="value06">value06</option>
+                                <option value="value07">value07</option>
+                                <option value="value08">value08</option>
+                                <option value="value09">value09</option>
+                                <option value="value10">value10</option>
+                                <option value="value11">value11</option>
+                            </select>
+                        </div>
+                        <div id="js_model" class="parts-filter_select">
+                            <select class="js-select">
+                                <option data-placeholder="true">Модель</option>
+                                <option value="value01">value01</option>
+                                <option value="value02">value02</option>
+                                <option value="value03">value03</option>
+                                <option value="value04">value04</option>
+                                <option value="value05">value05</option>
+                                <option value="value06">value06</option>
+                                <option value="value07">value07</option>
+                                <option value="value08">value08</option>
+                                <option value="value09">value09</option>
+                                <option value="value10">value10</option>
+                                <option value="value11">value11</option>
+                            </select>
+                        </div>
+
+                        <div class="parts-filter_card-bottom">
+
+                            <button class="button button--round">
+                                Подобрать
+                            </button>
+                            <a href="" class="c_link c_link--manufacturer">
+                                О производителе BRP <img src="assets/images/brp-logo-500x422.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <module href="/templates/deliveryInfo.html">
+                    deliveryInfo
+                </module>
+
+            </main>
+        </div>
+    </div>
+</div>
+
+<script src="assets/scripts/index.js"></script>
+
+
+</body>
+</html>
+

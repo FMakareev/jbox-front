@@ -1,0 +1,35 @@
+{
+  "name": "jbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:category": "parcel src/category.html",
+    "start:filter": "parcel src/filter.html",
+    "start:page3": "parcel src/page3.html",
+    "build": "parcel build src/*.html  --no-minify"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "cssnano": "^4.1.10",
+    "parcel-plugin-static-files-copy": "^2.2.1",
+    "posthtml": "^0.11.5",
+    "posthtml-modules": "^0.4.2",
+    "sass": "^1.22.10"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "replace-in-file": "^4.1.3",
+    "simplebar": "^4.1.0",
+    "slim-select": "^1.23.0"
+  },
+  "staticFiles": {
+    "staticPath": "src/assets",
+    "outDirPattern": "**/assets",
+    "watcherGlob": false
+  }
+}

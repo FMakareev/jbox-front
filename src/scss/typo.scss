@@ -1,0 +1,64 @@
+
+.typo {
+  text-align: left;
+  color: #000000;
+  font-family: 'PT Sans', sans-serif;
+
+  &--gray {
+    color: #3A3A3A;
+  }
+  &--white {
+    color: #ffffff;
+  }
+  &--l-gray {
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+
+
+  &--no-underline {
+    text-decoration: none;
+  }
+
+  &_xxs {
+    font-size: 10px;
+    line-height: 17px;
+  }
+
+  &_xs {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  &_s {
+    font-size: 14px;
+    line-height: 23px;
+  }
+
+  &_m {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  &_l {
+    font-size: 20px;
+    line-height: 34px;
+  }
+
+  &_xl {
+    font-size: 30px;
+    line-height: 50px;
+  }
+
+  &_xxl {
+    font-size: 50px;
+    line-height: 84px;
+  }
+
+  &--bold {
+    font-weight: bold;
+  }
+
+}
+
+

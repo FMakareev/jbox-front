@@ -1,0 +1,63 @@
+
+
+
+.parts_card {
+
+  background: #FFFFFF;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+
+  &--l {
+    padding: 55px 25px 55px 30px;
+  }
+  &--xl {
+    padding: 70px 80px 80px;
+  }
+}
+
+.parts-filter {
+  &_container {
+    position: relative;
+    padding-top: 80px;
+    padding-left: 140px;
+    padding-bottom: 160px;
+    min-height: 790px;
+  }
+
+  &_image {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 75%;
+    transform: translate(-75%, -50%);
+    z-index: 0;
+    max-height: 760px;
+  }
+
+  &_card {
+    position: relative;
+    z-index: 1;
+    max-width: 570px;
+  }
+
+  &_card-title {
+    margin-bottom: 30px;
+    color: #3A3A3A;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: left;
+  }
+
+  &_select {
+    margin-bottom: 20px;
+  }
+
+&_card-bottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+}

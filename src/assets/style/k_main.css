@@ -1,0 +1,845 @@
+body {margin: 0;}
+/* svg style*/
+.cls-11{fill:none;stroke:#000;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2px;}
+.cls-12{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}
+.cls-13{fill:none;stroke:#c1c0c0;stroke-miterlimit:10;}
+.cls-14{fill:none;stroke:#fff;stroke-miterlimit:10;}
+.cls-15{fill:#fff;}
+.cls-17{fill:#fff;}
+.k_wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    max-width: 3000px;
+    height: 100%;
+    min-height: 100vh;
+    text-align: center;
+/*    min-width: 480px; */
+    min-width: 480px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+.k_header {display: inline-block; width: 100%; max-width: 1440px; min-height: 20px; text-align: left; padding: 0 15px; font-family: 'Roboto', sans-serif; line-height: 1em;}
+.k_header_row {width: 100%; margin-top: 12px; position: relative;}
+.k_header_rowmid {width: 100%; margin-top: 16px; position: relative;}
+.k_header_rowmenu {width: 100%; position: relative;}
+
+.k_header input {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    width: 94%;
+    height: 32px;
+    max-width: 100%;
+    outline: none;
+    padding: 0;
+    background-color: #fff;
+    border-radius: 0;
+    color: #000;
+    font-size: 12px;
+}
+
+.k_pageblock {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: 50vh;
+}
+.k_pagecontent {display: inline-block; width: 100%; max-width: 1440px; min-height: 20px; text-align: center; padding: 0 15px;}
+
+.k_inblock {display: inline-block;}
+.k_content {display: inline-block; width: 100%; max-width: 1440px; min-height: 20px; text-align: left; padding: 0 15px;}
+.k_content_row {width: 100%;}
+.k_title, .k_value {display: inline-block; vertical-align: top; font-size: 14px; color: #000;}
+
+.k_header_topstrip {width: 100%; height: 42px; background: #3a3a3a;}
+.k_header_main {width: 100%; height: 65px; background: #fff;}
+.k_header_menu {width: 100%; height: 60px; background: #fff; box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.1);}
+.k_header_geo {width: 12px; height: 17px;}
+.k_header_citytitle, .k_header_cityvalue, .k_header_contact {font-size: 14px; color: #fff;}
+.k_header_citytitle {display: none;}
+.k_header_cityvalue {margin-left: 0px; text-decoration: underline solid; cursor: pointer;}
+.k_citywin {display: none; position: absolute; top: 0px; left: 0px; width: 100%; max-width: 805px; min-height: 408px; text-align: center; background: white; border-radius: 4px; box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15); z-index: 9999;}
+.k_city_img {width: 100%; min-width: 480px; max-height: 188px; margin-top: 48px; text-align: center;}
+.k_city_img img {width: 203px; height: 188px;}
+.k_city_cont {display: inline-block; width: 420px; height: 35px; margin-top: 30px; text-align: left;}
+.k_city_brow {width: 100%; height: 35px; margin-top: 30px; text-align: center;}
+.k_city_text {display: inline-block; vertical-align: middle; width: 85px; min-height: 14px; font-size: 14px; line-height: 1em;  color: black; text-align: left;}
+.k_city_inwrap {display: inline-block; vertical-align: middle; width: 292px; height: 34px; border: solid 1px #d5d6d5; border-radius: 5px; padding: 10px 12px 5px 12px; font-size: 14px; line-height: 1em; color: black; cursor: pointer;}
+.k_city_button {display: inline-block; position: relative; width: 169px; height: 36px; padding: 11px; text-align: center; font-size: 14px; line-height: 1em; color: white; border-radius: 18px; background: #f05a28; cursor: pointer;}
+.k_city_close {position: absolute; top: 0px; right: 0px; width: 100px; height: 75px; padding-top: 36px; text-align: center; cursor: pointer; text-align: center;}
+.k_city_close img {width: 12px; height: 12px;}
+.k_header_contact {display: none;}
+.k_header_cityvalue:hover, .k_header_contact:hover {color: #f05a28;}
+.k_header_topright {display: none;}
+.k_header_toprightmob {display: block; position: absolute; right: 20px; top: 0; width: 80px; text-align: right; line-height: 1em;}
+.k_header_carticom {width: 22px; height: 18px; margin-right: 14px;}
+.k_header_manicom {width: 16px; height: 19px; margin-right: 15px;}
+.k_header_storage {margin-left: 28px; min-width: 30px; cursor: pointer;}
+.k_header_storico {width: 19px; height: 15px;}
+.k_header_stortext {margin-left: 5px; margin-top: 3px; font-size: 14px; color: #606060;}
+.k_header_storage:hover .k_header_stortext {color: #f05a28;}
+.k_header_service {min-width: 30px; cursor: pointer;}
+.k_header_servico {width: 19px; height: 15px;}
+.k_header_servtext {margin-left: 5px; margin-top: 3px; font-size: 14px; color: #fff;}
+.k_header_service:hover .k_header_servtext {color: #f05a28;}
+.k_header_logo {display: none; vertical-align: middle; width: 121px; height: 26px;}
+.k_header_logosmall {display: none; vertical-align: middle; width: 60px; height: 26px;}
+.k_header_logomob {display: inline-block; vertical-align: middle; width: 43px; height: 19px; margin-right: 15px;}
+.k_header_phone {display: none;}
+.k_header_phontext {font-size: 16px; font-weight: bold; color: #494949;}
+.k_header_phonmob {display: inline-block; vertical-align: middle; font-size: 14px; color: #fff; margin-right: 24px;}
+.k_header_phonlink {margin-top: 1px; font-size: 12px; color: #f05a28; text-decoration: underline solid; cursor: pointer;}
+.k_header_search2 {position: relative; width: 100%; height: 34px;}
+.k_header_search {position: relative; width: 100%; height: 40px;}
+.k_header_searchmain {position: absolute; top: 0; left: 0; width: 100%; min-height: 40px; background: white; border: solid 1px #f05a28; border-radius: 20px; cursor: pointer;}
+/*.k_header_searchmain:hover {border: solid 1px #f05a28;}*/
+
+/* style=" height: 38px; margin-left: -1px; margin-top: -1px; border: none; padding: 8px 12px; font-size: 15px; color: #000; box-shadow: none; border: none; background: #fff;" */
+
+.k_header_searchin {position: relative; width: 93%; height: 36px; margin-left: 2px; margin-top: 1px; border: none; border-radius: 18px 0 0 18px; overflow: hidden;}
+.k_header_searchin input {width: 94%; height: 38px; margin-left: -1px; margin-top: -1px; border: none; padding: 8px 12px; font-size: 15px; color: #000; box-shadow: none; border: none; background: #fff;}
+.k_header_searchright {position: absolute; top: 1px; right: 1px; width: 67px; height: 38px; background: #f05a28; border-radius: 19px; text-align: center; z-index: 100; cursor: pointer;}
+.k_header_searchico {display: inline-block; width: 16px; height: 16px; margin-left: 3px; margin-top: 10px;}
+.k_header_searchbtn {display: none; vertical-align: middle; position: relative; width: 104px; height: 40px; margin-left: 15px; text-align: center; border-radius: 20px; background: #f05a28; cursor: pointer;}
+.k_sbtext {display: inline-block; margin-top: 13px; font-size: 14px; font-weight: bold; color: #fff;}
+.k_header_searchbtn:hover {background: #db4135;}
+.k_header_searchbtn:active {background: #db4135;}
+.k_header_searchbtn:hover .k_sbtext {margin-top: 12px; font-size: 15px; font-weight: bold; color: #fff;}
+.k_header_searchbtn:active .k_sbtext {margin-top: 12px; font-size: 15px; font-weight: bold; color: #fff;}
+.k_header_searchlist {display: block; width: 100%; min-height: 1px;}
+.k_header_cartblock {display: none;}
+.k_header_cartico {position: relative; width: 22px; height: 18px;}
+.k_header_carticoind {position: absolute; top: -1px; right: -1px; width: 10px; height: 10px; background: #f05a28; border-radius: 5px; z-index: 200;}
+
+.k_header_manico {display: none; vertical-align: middle; width: 16px; height: 19px; margin-left: 24px;}
+.k_header_cartinfo {display: none;}
+.k_header_carttext {display: inline-block; font-size: 14px; color: #f05a28;}
+
+.k_header_menubase {display: inline-block; vertical-align: middle; width: 55%; overflow: hidden;}
+.k_header_menubasert {position: relative; display: inline-block; vertical-align: middle; width: 40px; height: 50px;}
+.k_header_menuhidbl {position: absolute; top: 0px; left: -10px; width: 40px; height: 50px; z-index: 200;}
+.k_header_menuhidgr {position: absolute; top: 0; left: 0; width: 10px; height: 50px; background-image: linear-gradient(to right, transparent, white);}
+.k_header_menuhidar {position: absolute; top: 18px; left: 22px; width: 8px; height: 14px;}
+.k_header_menuline {height: 50px; min-width: 450px; margin-top: 2px;}
+.k_header_menuitem {position: relative; display: inline-block; vertical-align: middle; padding: 18px 11px; height: 50px; font-size: 14px; font-weight: normal; line-height: 1em; color: #000; border-bottom: solid 1px #fff; cursor: pointer;}
+.k_header_menuitem:hover {color: #f05a28;}
+
+.k_mitact {border-bottom: solid 1px #3a3a3a;}
+.k_menu_row {display: block; width: 100%; height: 1px; background: transparent;}
+.k_header_menucont {display: inline-block; vertical-align: middle; padding: 18px 16px; height: 50px; font-size: 16px; font-weight: bold; line-height: 1em; color: #000; cursor: pointer;}
+.k_header_menuvk {display: none; vertical-align: middle; padding: 6px 0; height: 26px; margin-right: 28px; font-size: 14px; font-weight: normal; line-height: 1em; color: #000; border-bottom: solid 1px #000; cursor: pointer;}
+.k_header_menuvkico {display: none; vertical-align: middle; width: 28px; height: 28px; margin-right: 15px; border-radius: 50%; background: #4a76a8; text-align: center; cursor: pointer;}
+.k_header_menuvkico img {width: 20px; margin-top: 9px;}
+.k_header_menuvkico:hover {background: #f05a28;}
+.k_header_menucont:hover {color: #f05a28;}
+.k_header_menuigico {display: none; vertical-align: middle; width: 28px; height: 28px; margin-right: 15px; border-radius: 50%; background: #4a76a8; text-align: center; cursor: pointer;}
+.k_header_menuigico:hover {background: #f05a28;}
+
+.k_menu_wrap {position: absolute; display: none; width: 100%; background: transparent; min-height: 1px; text-align: center;}
+.k_menu_window {position: relative; display: inline-block; width: 100%; min-width: 480px; max-width: 1538px; min-height: 100px; font-family: 'Roboto', sans-serif; background: #fff; box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15); z-index: 5000;}
+.k_menu_popin {position: relative; display: inline-block; width: 100%; min-height: 200px; padding: 20px 0; text-align: center;}
+.k_menu_popleft {display: inline-block; vertical-align: top; width: 100%; min-height: 200px; text-align: left;}
+
+.k_menu_popfull {display: none; width: 100%; max-width: 1440px; padding: 0 15px; min-height: 100px; text-align: left;} /* ???? */
+
+.k_menu_popright {display: none; width: 1px; text-align: left;}
+.k_menu_popcat {display: none; width: 100%; max-width: 1440px; padding: 0; min-height: 100px; text-align: left;}
+.k_menu_poplrow {position: relative; width: 100%; height: 56px; padding: 20px 50px;}
+.k_part_text {display: inline-block; vertical-align: middle; width: 100%; min-height: 12px; font-size: 15px; font-weight: normal; line-height: 1em; color: #000;}
+.k_part_textback {display: inline-block; vertical-align: middle; min-width: 20px; min-height: 12px; margin-left: 20px; font-size: 15px; font-weight: normal; line-height: 1em; color: #000;}
+.k_part_arrow {position: absolute; top: 20px; right: 50px; width: 8px; height: 14px;}
+.k_back_arrow {display: inline-block; vertical-align: middle; width: 8px; height: 14px;}
+.k_part_arrow .cls-13, .k_back_arrow .cls-13 {stroke: #000; stroke-width: 2px;}
+
+.k_menu_plract2 {background: #3a3a3a;}
+.k_menu_plract2 .k_part_text {font-size: 15px; color: #fff;}
+.k_menu_plract2 .cls-13 {stroke: #fff;}
+
+.k_menu_popmob {display: none; width: 100%; min-height: 100px; text-align: left;}
+.k_header_menuleft {display: inline-block; vertical-align: middle; width: 162px; height: 50px; cursor: pointer;}
+.k_header_mmenu {display: inline-block; vertical-align: middle; width: 20px; height: 50px;}
+.k_header_mmenust {display: none; width: 20px; height: 15px; margin-top: 18px;}
+.k_header_mmenucr {display: none; width: 14px; height: 14px; margin-left: 2px; margin-top: 17px;}
+.k_header_mmenutext {display: inline-block; vertical-align: middle; margin-left: 15px; margin-top: 0px; font-size: 16px; font-weight: bold; color: #000; cursor: pointer;}
+.k_header_menuleft:hover .k_header_mmenutext {color: #f05a28;}
+.k_header_menuleft:hover .cls-11 {stroke:#f05a28;}
+.k_header_menuright {position: absolute; display: none; min-width: 50px; top: 9px; right: -15px;}
+
+.k_slidemenu {display: none; width: 100%; min-height: 200px; text-align: left;}
+.k_slidemenu_wrap {position: relative; width: 100%; min-height: 200px; overflow: hidden;}
+.k_slidemenu_block {display: inline-block; margin-left: 0; min-width: 480px; min-height: 200px;}
+.k_slidemenu_level {display: inline-block; vertical-align: top; width: 480px; min-height: 200px;}
+
+
+
+.k_menu_column {display: inline-block; vertical-align: top; width: 24.2%; padding-right: 20px; background: white; margin-top: 0px; margin-bottom: 30px; z-index: 203;}
+.k_menu_title {width: 100%; height: 30px; margin-top: 42px; font-size: 30px; font-weight: 500; line-height: 1em; color: #000;}
+.k_menu_content, .k_mmenu_content {width: 100%; min-height: 60px;}
+.k_menu_banner {width: 100%; min-height: 30px; margin-top: 42px;}
+.k_menu_logos {width: 100%; height: 27px; margin: 24px 0; overflow: hidden; text-align: center;}
+.k_menu_logo {display: inline-block; vertical-align: middle; margin-left: 87px;}
+.k_menu_logo:first-child {margin-left: 0px;}
+.k_menu_cblock {width: 360px; padding-right: 10px; min-height: 20px; margin-bottom: 10px;}
+.k_menu_cblock a {text-decoration: none;}
+.k_menu_cttl {width: 100%; margin-top: 40px; font-weight: bold; font-size: 14px; line-height: 1em; color: #000;}
+.k_menu_cvalue {width: 100%; margin-top: 12px; font-weight: normal; font-size: 14px; line-height: 1.4em; color: #8e8e8e;}
+
+.k_mmenu_column {display: inline-block; vertical-align: top; width: 290px; padding-left: 30px; background: white; margin-top: 0px; margin-bottom: 30px; z-index: 204;}
+.k_mmenu_title {width: 100%; height: 30px; margin-top: 24px; padding-left: 30px; font-size: 30px; font-weight: 500; line-height: 1em; color: #000;}
+.k_mmenu_cblock {
+    width: 260px;
+    /*min-height: 20px; */
+    margin-bottom: 0px;
+    overflow: hidden;
+    height: auto;
+}
+.k_mmenu_cblock a {text-decoration: none;}
+.k_mmenu_cttl {width: 100%; margin-top: 24px; font-weight: bold; font-size: 14px; line-height: 1em; color: #000;}
+.k_mmenu_cvalue {width: 100%; margin-top: 12px; font-weight: normal; font-size: 14px; line-height: 1.4em; color: #8e8e8e;}
+.k_mmenu_cvalue:hover {color: #f05a28;}
+
+.k_menu_show, .k_mmenu_show {position: relative; width: 100%; margin-top: 12px; cursor: pointer;}
+.k_menu_showtxt, .k_mmenu_showtxt {display: inline-block; vertical-align: middle; margin-left: 10px; font-size: 12px; font-weight: 300; line-height: 1em; color: #000; cursor: pointer;}
+.k_menu_show img, .k_mmenu_show img {display: inline-block; vertical-align: middle; width: 11px; height: 5px;}
+.k_menu_show:hover .k_menu_showtxt {color: #f05a28;}
+.k_mmenu_show:hover .k_mmenu_showtxt {color: #f05a28;}
+
+.k_mmenu_show_active img {
+    transform: rotate(180deg);
+}
+
+.k_boxshadow {box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.15);}
+.k_breadcrumbs {width: 100%; min-height: 25px; margin-top: 30px; padding: 0 25px;}
+.k_breadcrumbs a {font-family: 'Roboto', sans-serif; font-size: 14px; font-weight: 300; color: #000;}
+
+.k_fullpad {width: 290px; padding-left: 30px;}
+
+/* banners */
+.k_bannertop_wrap {width: 100%; height: 270px; text-align: center;}
+.k_bannertop_bg {background-color: #34a5a5;}
+.k_bannertop_content {position: relative; display: inline-block; width: 100%; max-width: 920px; height: 100%; text-align: center; padding: 0 20px;}
+.k_bannertop_slider {position: relative; display: inline-block; width: 100%; height: 100%; text-align: left; overflow: hidden;}
+.k_bannertop_slidin {position: absolute; top: 0; left: 0; width: 720px; height: 100%; text-align: left; overflow: hidden;}
+.k_bannertop_navigation {position: absolute; left: 20px; bottom: 36px; min-width: 65px; height: 12px; text-align: left;}
+.k_banner_navpoint {display: inline-block; vertical-align: top; width: 10px; height: 10px; border-radius: 50%; border: solid 1px white; background: transparent; margin-right: 7px;}
+.k_banner_navact {background: white;}
+.k_topbanners {display: none;}
+
+/* main */
+.k_slider {position: relative; width: 100%; height: 460px;}
+.k_slider_wrap {position: relative; width: 100%; height: 460px; text-align: left; overflow-x: scroll; overflow-y: hidden;}
+.k_slider_content {position: relative; width: 1320px; height: 460px; text-align: left;}
+.k_slider_block {position: relative; display: inline-block; vertical-align: top; width: 150px; height: 227px; margin-right: 10px; text-align: center; padding: 10px;}
+.k_slider_block:last-child {margin-right: 0;}             /* 80 */
+.k_slider_image {position: relative; width: 130px; height: 130px; text-align: center; background-position: center; background-size: contain; background-repeat: no-repeat;}
+.k_slider_price {width: 130px; height: 30px; text-align: left; margin-top: 15px; font-size: 20px; font-weight: bold;}
+.k_slider_text {width: 130px; height: 30px; text-align: left; font-size: 12px; font-weight: normal; overflow: hidden;}
+.k_slider_sale {position: absolute; top: 0px; left: 0; width: 86px; height: 32px; border-radius: 16px; background: #f05a28; padding-top: 3px; text-align: center; font-size: 24px; font-weight: bold; color: #fff; z-index: 1000;}
+.k_slider_new {position: absolute; top: 0px; left: 0; width: 102px; height: 32px; border-radius: 16px; background: #f05a28; text-align: center; padding-top: 7px; font-size: 18px; font-weight: normal; color: #fff; z-index: 1000;}
+.k_slider_hidleft {display: none; position: absolute; top: 0; left: 0; width: 50px; height: 460px; background: rgba(255,255,255,0.8); z-index: 4999;}
+.k_slider_hidright {display: none; position: absolute; top: 0; right: 0; width: 50px; height: 460px; background: rgba(255,255,255,0.8); z-index: 4999;}
+.k_slider_roundleft {position: absolute; top: 205px; left: 3px; width: 39px; height: 39px; border-radius: 50%; background: #fff; box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.25); cursor: pointer;}
+.k_slider_roundright {position: absolute; top: 205px; right: 3px; width: 39px; height: 39px; border-radius: 50%; background: #fff; box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.25); cursor: pointer;}
+.k_slider_arrowleft {position: absolute; top: 10px; left: 15px; width: 7px; height: 14px;}
+.k_slider_arrowright {position: absolute; top: 10px; left: 17px; width: 7px; height: 14px;}
+
+/*.k_slider_right {position: absolute; top: 0; right: 25px; width: 100px; height: 278px; background-image: linear-gradient(to right, transparent, white); z-index: 9999;}*/
+
+.k_slider2 {position: relative; width: 100%; height: 374px;}
+.k_slider2_wrap {position: relative; width: 100%; height: 374px; text-align: left; overflow-x: scroll; overflow-y: hidden;}
+.k_slider2_content {position: relative; width: 1565px; height: 374px; text-align: left;}
+.k_slider2_block {position: relative; display: inline-block; vertical-align: top; width: 280px; height: 169px; margin-right: 16px; margin-top: 8px; margin-bottom: 8px;}
+.k_slider2_block:last-child {margin-right: 0;}
+.k_slider2_block img {width: 100%;}
+.k_slider2_image {position: relative; width: 190px; height: 150px; text-align: center; background-position: center; background-size: contain; background-repeat: no-repeat;}
+.k_slider2_price {width: 190px; height: 30px; text-align: left; margin-top: 20px; font-size: 20px; font-weight: bold;}
+.k_slider2_text {width: 190px; height: 35px; text-align: left; font-size: 14px; font-weight: normal; overflow: hidden;}
+.k_slider2_hidleft {display: none; position: absolute; top: 0; left: 0; width: 50px; height: 374px; background: rgba(255,255,255,0.8); z-index: 4999;}
+.k_slider2_hidright {display: none; position: absolute; top: 0; right: 0; width: 50px; height: 374px; background: rgba(255,255,255,0.8); z-index: 4999;}
+.k_slider2_roundleft {position: absolute; top: 165px; left: 3px; width: 39px; height: 39px; border-radius: 50%; background: #fff; box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.25); cursor: pointer;}
+.k_slider2_roundright {position: absolute; top: 165px; right: 3px; width: 39px; height: 39px; border-radius: 50%; background: #fff; box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.25); cursor: pointer;}
+.k_slider2_arrowleft {position: absolute; top: 10px; left: 15px; width: 7px; height: 14px;}
+.k_slider2_arrowright {position: absolute; top: 10px; left: 17px; width: 7px; height: 14px;}
+
+
+
+
+.k_delivery_block {display: inline-block; width: 100%; max-width: 1553px; min-height: 20px; margin-top: 39px; text-align: center; padding: 0;}
+.k_delivery_top {display: block; width: 100%; min-height: 20px; text-align: left;}
+.k_delivery_bottom {display: block; width: 100%; min-height: 20px; text-align: left;}
+.k_main_delivery {display: inline-block; vertical-align: top; position: relative; width: 53%; height: 337px; text-align: left; background: #494949;}
+.k_main_delivimg {display: inline-block; vertical-align: top; width: 47%; height: 337px; background-image: url(https://jboxparts.ru/image/catalog/banner/delivery2.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;}
+
+.k_main_title {width: 100%; height: 25px; text-align: left; margin-top: 15px; font-size: 14px; font-weight: bold;}
+.k_main_delivery_old {display: inline-block; width: 100%; max-width: 1410px; height: 77px; text-align: center; margin-top: 39px; font-size: 26px; font-weight: bold; border-radius: 5px; background: #494949; cursor: pointer;}
+.k_main_delivery_old:hover {box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);}
+.k_main_delivin {display: inline-block; width: 100%; min-height: 20px; text-align: center; margin-top: 18px;}
+.k_main_delivtxt {display: inline-block; vertical-align: middle; font-size: 26px; font-weight: bold; color: white;}
+.k_main_delivimg_old {display: inline-block; vertical-align: middle; margin-left: 18px;}
+.k_main_delivimg_old img {width: 37px; height: 25px;}
+
+.k_main_ardown {width: 100%; height: 20px; text-align: center; margin-top: 13px;}
+.k_main_ardown img {width: 22px; height: 14px;}
+
+.slider_service {margin-bottom: 15px;}
+
+.k_advrow1 {display: block;}
+.k_advrow2 {display: block;}
+.k_advert_row {width: 100%; min-height: 100px; text-align: center; margin-top: 13px;}
+.k_advert_block {vertical-align: top; width: 100%; height: 230px;}
+.k_advert_content {position: relative; display: inline-block; width: 420px; height: 195px; text-align: center;}
+.k_advert1, .k_advert2, .k_advert3, .k_advert4 {margin: 15px 0px;}
+.k_advert_blockbg {width: 100%; height: 195px; border-radius: 5px; text-align: center; margin-top: 35px;}
+.k_adbl_bg1 {background: #34a5a5;}
+.k_adbl_bg2 {background: #494949;}
+.k_advert_blocktxt {position: absolute; font-size: 16px; font-weight: bold; text-align: left;}
+.k_adbl_txt1 {top: 65px; left: 20px; color: white;}
+.k_adbl_txt2 {top: 65px; left: 20px; color: white;}
+.k_adbl_img1 {position: absolute; top: -30px; right: 0px; width: 206px; height: 240px;}
+.k_adbl_img1 img {width: 100%;}
+.k_adbl_img2 {position: absolute; top: -40px; right: 30px; width: 204px; height: 204px;}
+.k_adbl_img2 img {width: 100%;}
+.k_adbl_btn1 {position: absolute; bottom: 32px; left: 20px; width: 92px; height: 26px; border-radius: 5px; background: transparent; border: solid 1px #fff; text-align: center; padding-top: 5px; font-size: 12px; font-weight: bold; color: white;}
+.k_adbl_btn2 {position: absolute; bottom: 32px; left: 20px; width: 92px; height: 26px; border-radius: 5px; background: transparent; border: solid 1px #fff; text-align: center; padding-top: 5px; font-size: 12px; font-weight: bold; color: white;}
+.k_adbl_btn1:hover {background: #2A8481;}
+.k_adbl_btn2:hover {background: #3D3D3D;}
+
+.k_advert1 {display: inline-block;}
+.k_advert2 {display: none;}
+.k_advert3 {display: none;}
+.k_advert4 {display: inline-block;}
+
+.k_main_brands {width: 100%; min-height: 200px; border-top: solid 1px #a4a4a4; padding-top: 15px; padding-bottom: 70px; margin-top: 30px;}
+.k_main_brand {display: inline-block; vertical-align: middle; width: 30%; text-align: center; margin-top: 40px;}
+
+
+/* product */
+.k_card_page {display: inline-block; width: 100%; min-height: 200px; text-align: center; font-family: 'PT Sans', sans-serif;}
+.k_card_page a {text-decoration: none; color: #000;}
+.k_card_content {display: inline-block; width: 100%; max-width: 1440px; min-height: 20px; text-align: left;} /* padding: 0 15px; */
+.k_card_contentrow {width: 100%; padding: 0;}
+.k_card_leftblock {position: relative;  width: 100%; min-height: 120px; margin-bottom: 20px; background: #fff; z-index: 20;}
+.k_card_rightblock {display: none;}
+.k_card_inrowbot {width: 100%; min-height: 200px; background: #fff; border-radius: 32px; box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.15);}
+
+.k_card_bottomblock {width: 100%; min-height: 500px; background: #fff;}
+/*. k_card_bottomblock .k_slider {position: relative; width: 1465px; height: 278px; margin-top: 28px;} */
+.k_card_bbtitle {display: inline-block; vertical-align: top; width: 100%; margin-top: 55px; font-size: 20px; font-weight: bold;}
+.k_card_inrow {position: relative; width: 100%; min-height: 20px; margin: 0; padding: 15px 25px;}
+.k_card_imageblock {display: inline-block; vertical-align: top; width: 245px; min-height: 285px; background: #fff;}
+.k_card_rightmob {display: none; position: absolute; top: 15px; right: 25px; width: 350px; min-height: 100px; background: #fff; border-radius: 5px; z-index: 10; padding: 15px;}
+.k_card_rightsmall {display: block; position: absolute; top: 18px; right: -25px; width: 200px; height: 260px; background: #fff; border-radius: 24px 0 0 24px; z-index: 10; padding: 35px 15px 35px 35px; box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.15);}
+.k_card_infleft {width: 100%; min-height: 50px; margin-top: 0;}
+.k_card_infright {position: relative; width: 100%; height: 1px;}
+.k_card_mainimage {display: block; width: 243px; height: 243px; background: #fff;}
+.k_card_imageblock img {max-width: 100%; max-height: 100%;}
+.k_card_extimage {display: block; width: 390px; padding-left: 8px; height: 50px; margin-top: 15px; background: #fff;}
+.k_card_extimg {display: inline-block; vertical-align: top; width: 36px; height: 36px; padding: 5px; background: #fff; margin-left: 8px; border-radius: 10px; box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); opacity: 0.6; cursor: pointer;}
+.k_card_extimg img {width: 36px; height: 36px;}
+.k_card_extimg:hover {opacity: 1;}
+.k_card_infoblock {display: none; vertical-align: top; width: 465px; min-height: 404px; margin-left: 56px; background: #fff;}
+.k_card_title {width: 100%; min-height: 20px; margin-top: 14px;}
+.k_card_title h1 {margin: 0; padding: 0; line-height: 1.2em; text-decoration: none; font-size: 20px; font-weight: normal; color: #000;}
+.k_card_titlemob {width: 100%; min-height: 20px; margin-top: 0;}
+.k_card_titlemob h1 {margin: 0; padding: 0; font-size: 25px; font-weight: bold; text-decoration: none; color: #000;}
+.k_card_orn {display: none; width: 100%;}
+.k_card_artmob {display: inline-block; vertical-align: top; margin-left: 15px;}
+
+.k_card_manuf {width: 100%; min-height: 18px; margin-top: 2px; color: #000;}
+.k_card_manuf .k_title {width: 103px;}
+.k_card_manuf .k_value {max-width: 360px;}
+.k_card_rating {display: none; width: 100%; height: 30px; margin-top: 8px; border-bottom: solid 1px #bfbfbf;}
+.k_card_rating .k_title, .k_card_rating .k_value {color: #2d8ab2;}
+.k_card_rating a:hover .k_title {color: #f05a28;}
+.k_card_rating a:hover .k_value {color: #f05a28;}
+.k_stars {display: inline-block; vertical-align: top; width: 117px;}
+.k_stars img {display: inline-block; vertical-align: top; width: 14px; height: 14px; margin-right: 6px;}
+.k_resp {width: 51px;}
+.k_answ {margin-left: 20px;}
+.k_card_vcode {display: none; width: 100%; margin-top: 16px;}
+.k_card_onums {width: 100%; margin-top: 0px;}
+.k_card_vcode .k_title, .k_card_onums .k_title {margin-right: 9px;}
+.k_card_onumsext {width: 100%; min-height: 20px;}
+.k_card_onumsext .k_title {color: #2d8ab2;}
+.k_card_onumsext .k_title:hover {color: #f05a28;}
+.k_card_compart {width: 100%; height: 59px; padding: 10px 0; margin-top: 17px; background: #f7f7f7;}
+.k_card_compart:hover {background: #f9f9f9;}
+.k_card_compart:hover .k_cctop{color: #f05a28;}
+
+.k_card_compin {display: inline-block; vertical-align: middle; min-height: 20px; margin-left: 13px;}
+.k_card_compin img {width: 36px; height: 36px;}
+.k_cctop, .k_ccbottom {min-height: 16px; margin-left: 3px; font-size: 14px; line-height: 1em;}
+.k_cctop {color: #2d8ab2;}
+.k_ccbottom {color: #000;}
+.k_card_description {width: 100%; min-height: 80px; margin-top: 23px;}
+.k_card_dtitle {display: block; width: 100%; height: 16px; font-size: 14px; font-weight: bold; line-height: 1em;}
+.k_card_dvalue {display: block; width: 100%; margin-top: 4px; font-size: 14px; line-height: 1.4em;}
+.k_card_descext {width: 100%; height: 46px; border-bottom: solid 1px #bfbfbf;}
+.k_card_descext .k_title {color: #2d8ab2;}
+.k_card_descext .k_title:hover {color: #f05a28;}
+
+.k_card_dellinmob {position: relative; display: block; width: 100%; min-height: 60px; margin-top: 20px; padding: 20px; border-top: none;}
+.k_card_dellinsoc {position: absolute; top: 14px; right: 50%; width: 200px; height: 30px; margin-right: -100px; text-align: center;}
+.k_card_socico {display: inline-block; vertical-align: top; width: 28px; height: 28px; margin-left: 12px;}
+.k_card_dellinks {width: 100%; height: 42px; margin-top: 60px; text-align: center;}
+.k_card_dellinks .k_title {color: #2d8ab2;}
+.k_card_dellinks .k_title:hover {color: #f05a28;}
+.k_ccdml {margin-left: 8px;}
+
+.k_menuitfull {display: inline-block;}
+.k_menuitem {vertical-align: top; min-width: 20px; height: 38px; border-radius: 19px; padding: 8px 16px 12px 16px; font-size: 14px; background: #fff; color: #000;}
+.k_menuitmob {display: none;}
+.k_card_botmenu {width: 100%; min-height: 40px; margin-top: 10px; border-bottom: none;}
+.k_card_botmenu .k_active {background: #494949; color: #fff; cursor: default;}
+.k_card_botcontent_orig {display: none; width: 100%; min-height: 190px; margin-top: 27px;}
+.k_card_botcontent {display: none; width: 450px; min-height: 190px; margin-top: 27px; margin-left: -25px;  padding: 15px 10px 15px 25px; background: #f7f7f7; border-radius: 0 39px 39px 0;}
+.k_card_botcontent .k_leftblock {display: inline-block; vertical-align: top; width: 390px; min-height: 100px; margin-top: 12px; margin-left: 20px; margin-right: 30px;}
+.k_card_botcontent .k_rightblock {display: inline-block; vertical-align: top; width: 400px; min-height: 100px; margin-top: 12px; margin-left: 20px;}
+.k_card_botcontent .k_title {display: block; width: 100%; height: 16px; font-weight: bold; line-height: 1em;}
+.k_card_botcontent .k_value {display: block; width: 100%; margin-top: 4px; font-weight: 400; line-height: 1.4em;}
+.k_card_partab {width: 100%; min-height: 20px; margin-top: 12px}
+.k_card_partab .k_row {width: 100%; min-height: 31px; padding: 9px 0; border-top: solid 1px #bfbfbf; cursor: pointer;}
+.k_card_partab .k_row:hover {background: #f9f9f9;}
+.k_card_botsubst {display: none; width: 100%; min-height: 190px; margin-top: 27px;}
+
+.k_card_partab .k_row:nth-child(1) {border-top: none;}
+.k_card_partab .k_tabtitle, .k_card_partab .k_tabvalue {display: inline-block; vertical-align: top; min-height: 14px; font-size: 14px; font-weight: 400; line-height: 1em;}
+.k_card_partab .k_tabtitle {width: 150px;}
+.k_card_partab .k_tabvalue {width: 235px;}
+
+.k_card_rightcontent {width: 140px; min-height: 100px; margin: 0;}
+.k_rcprice {width: 100%; font-size: 20px; font-weight: bold; line-height: 1em;}
+.k_card_price {width: 100%; height: 51px; padding-top: 0px; border-bottom: solid 1px #bfbfbf;}
+.k_card_price .k_row {width: 100%; min-height: 14px;}
+.k_card_price .k_title {margin-top: 5px; line-height: 1em;}
+.k_card_price .k_value {font-size: 20px; margin-left: 7px; line-height: 1em;}
+.k_card_price .k_status {line-height: 1em; margin-top: 6px; font-size: 14px; color: #a5a5a5;}
+.k_card_specsgn {display: inline-block; vertical-align: middle; font-size: 30px; font-weight: normal; line-height: 1em; margin: 0 18px; color: #000;}
+.k_card_specrnd {display: inline-block; vertical-align: middle; width: 28px; height: 28px; border-radius: 50%; text-align: center; background: #f05a28;}
+.k_card_specnum {display: inline-block; font-size: 14px; font-weight: bold; line-height: 1em; margin-top: 7px; color: #fff;}
+.k_card_selpmob {display: inline-block; vertical-align: top; margin-left: 20px;}
+.k_card_rheart {display: inline-block; vertical-align: top; width: 13px; height: 11px; margin-top: -1px; margin-right: 10px;}
+.k_card_rheart img {width: 13px;}
+.k_card_butbuy {display: inline-block; vertical-align: top; width: 140px; height: 30px; padding: 10px 15px; text-align: center; font-size: 14px; font-weight: bold; line-height: 1em; color: #000;}
+.k_card_butseld {display: none; vertical-align: top; width: 103px; height: 30px; padding: 10px 0; text-align: left; font-size: 14px; font-weight: bold; line-height: 1em; color: #000;}
+.k_card_butseld .k_text {display: inline-block; vertical-align: top;}
+.k_card_actinmob {width: 100%; text-align: center;}
+.k_card_actinbut {width: 100%; margin-top: 16px; text-align: center;}
+.k_card_actinqtx {display: none;}
+.k_card_inrowmid {width: 100%; min-height: 54px; margin-bottom: 24px; padding: 18px 20px 15px 24px; background: #f7f7f7;}
+
+.k_card_delivery {width: 100%; height: 269px; padding-top: 26px; border-bottom: solid 1px #bfbfbf;}
+.k_card_delivery .k_row {width: 100%; min-height: 20px; margin-bottom: 18px;}
+.k_card_delivery .k_title {width: 25px; text-align: center;}
+.k_card_delivery .k_value {width: 250px; line-height: 1.4em; margin-left: 13px;}
+.k_card_delivery a {color: #2d8ab2;}
+.k_card_delivery a:hover {color: #f05a28;}
+.k_card_img1 {width: 16px; height: 22px;}
+.k_card_img2 {width: 25px; height: 18px;}
+.k_card_img3 {width: 20px; height: 20px;}
+.k_card_img4 {width: 22px; height: 19px; margin-top: 4px;}
+.k_card_img5 {width: 19px; height: 15px; margin-top: 12px; margin-right: 10px;}
+.k_card_img6 {width: 8px; height: 5px; margin-top: 0px; margin-left: 4px;}
+.k_card_img7 {width: 4px; height: 7px; margin: 0 2px;}
+.k_card_action {position: relative; width: 100%; min-height: 100px; padding-top: 12px;}
+.k_card_action .k_row {width: 100%; min-height: 41px; margin-top: 15px;}
+.k_button {width: 100%; height: 40px; border-radius: 20px; text-align: center; background: #f05a28; box-shadow: 0px 5px 5px 0px rgba(245, 111, 0, 0.1); cursor: pointer;}
+.k_button:hover { background: #fc3b15;}
+.k_button:active {box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.1);}
+.k_button .k_text {display: inline-block; vertical-align: top; height: 15px; margin-top: 11px; font-size: 14px; color: #fff;}
+.k_button_white {width: 100%; height: 40px; border-radius: 20px; text-align: center; background: #fff; border: solid 1px #898989; box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1); cursor: pointer;}
+.k_button_white:hover {background: #ededed;}
+.k_button_white:active {box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.1);}
+.k_button_white .k_text {display: inline-block; height: 15px; margin-top: 9px; font-size: 14px; color: #000;}
+.k_card_action .k_wrap_special {display: none; position: absolute; top: 25px; left: 0px; width: 120px; min-height: 30px;}
+.k_card_action .k_select {display: block; width: 114px; min-height: 66px; max-height: 110px; padding: 4px 0; margin-top: 42px; background: white; border-radius: 5px; border: solid 1px #bababa; overflow-y: auto;}
+.k_card_action .k_option {display: block; width: auto; height: 20px; padding-top: 2px; background: white; border-left: solid 2px #fff; text-align: center; font-size: 14px; cursor: pointer;}
+.k_card_action .k_option:hover {background: #ededed; border-left: solid 2px #f05a28;}
+.k_card_action .k_button_special {display: block; width: 114px; height: 25px; border-radius: 5px; text-align: center; background: #fff; border: solid 1px #898989; cursor: pointer;}
+.k_card_action .k_button_special .k_text {display: inline-block; vertical-align: top; height: 15px; margin-top: 2px; font-size: 14px; color: #000;}
+.k_card_action .k_button_special:hover {background: #ededed;}
+.k_card_action .k_button_special:active {box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.1);}
+.k_card_compartitle {height: 60px; margin-left: 20px; padding-top: 5px; font-size: 14px; font-weight: bold;}
+.k_card_compartitle span {margin-left: 15px; font-weight: normal;}
+.k_card_comparblock {width: 100%; min-height: 100px; padding-bottom: 30px; border-top: solid 1px #bfbfbf;}
+.k_card_comparinblock {display: inline-block; vertical-align: top; width: 280px; margin-top: 29px; padding-bottom: 5px; margin-left: 20px; min-height: 50px;}
+.k_card_comparinblock .k_title {width: 100%; height: 22px; font-weight: bold;}
+.k_card_comparinblock .k_value {width: 100%; line-height: 1.1em;}
+.k_card_comparblock .k_leftblock {display: inline-block; vertical-align: top; width: 206px; min-height: 50px; margin-left: 0px; margin-top: 32px;}
+.k_card_comparblock .k_rightblock {display: inline-block; vertical-align: top; width: 674px; min-height: 50px; margin-top: 22px; margin-left: 20px; padding-bottom: 30px;}
+.k_card_comparblock .k_rightblock .k_value {line-height: 1.5em;}
+.k_card_ccimg {width: 200px; height: 200px; background: #ebebeb; box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);}
+.k_card_anblock {width: 100%; min-height: 264px; border-top: solid 1px #bfbfbf; background: white; cursor: pointer;}
+.k_card_anblock:hover {background: #f9f9f9;}
+.k_card_anblock:hover .k_card_antitle {color: #f05a28;}
+.k_card_caimg {width: 135px; height: 135px; background: #fff; margin-left: 20px; padding: 5px; border-radius: 10px; box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);}
+.k_card_caimg img {width: 135px; height: 135px;}
+.k_card_anblock .k_leftblock {display: inline-block; vertical-align: top; width: 203px; min-height: 50px; margin-top: 32px; margin-left: 0px;}
+.k_card_anblock .k_rightblock {display: inline-block; vertical-align: top; width: 290px; min-height: 50px; margin-top: 0px; margin-left: 0px; margin-bottom: 20px;}
+.k_card_anblock .k_middleblock {display: inline-block; vertical-align: top; width: 380px; min-height: 50px; margin-top: 32px; margin-left: 20px; padding-bottom: 30px;}
+.k_card_anblock .k_row {width: 100%; min-height: 41px; margin-top: 15px;}
+.k_card_antitle {width: 100%; min-height: 20px; font-size: 20px;}
+.k_card_anmanuf {width: 100%; height: 29px; margin-top: 1px; font-size: 14px;}
+.k_card_anart {width: 100%; height: 21px; font-size: 14px;}
+.k_card_anorig {width: 100%; min-height: 35px; font-size: 14px;}
+.k_card_anprice {display: inline-block; vertical-align: top; width: 240px; height: 200px; margin-left: 30px; margin-top: 10px; border-radius: 5px; background: #fff; box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);}
+.k_card_anpin {width: 170px; height: 170px; margin-left: 25px; margin-top: 17px;}
+.k_card_anbuynow {margin-top: 10px; font-size: 14px; color: #2d8ab2;}
+
+.k_card_manblock {width: 100%; min-height: 100px; padding-bottom: 30px; border-top: solid 1px #bfbfbf;}
+.k_card_maninblock {display: inline-block; vertical-align: top; width: 280px; margin-top: 29px; padding-bottom: 5px; margin-left: 20px; min-height: 50px;}
+.k_card_manblock .k_leftblock {display: inline-block; vertical-align: top; width: 206px; min-height: 50px; margin-left: 0px; margin-top: 32px;}
+.k_card_manblock .k_rightblock {display: inline-block; vertical-align: top; min-width: 420px; min-height: 50px; margin-top: 22px; margin-left: 0px; padding-bottom: 30px;}
+.k_card_manblock .k_rightblock .k_value {line-height: 1.5em;}
+
+/* footer */
+.k_footer {
+    -ms-flex: none;
+    flex: none;
+    width: 100%;
+    background: #494949;
+    text-align: center;
+}
+.k_footer_block {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    min-height: 100px;
+    max-width: 1440px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+}
+.k_footer_block a {text-decoration: none;}
+.k_footer_content {width: 100%; min-height: 20px; margin: 42px 0; padding: 0 15px;}
+.k_footer_left {display: inline-block; vertical-align: top; width: 100%;}
+.k_footer_right {display: inline-block; vertical-align: top; width: 100%; margin-top: 24px;}
+.k_footer_middle {display: inline-block; vertical-align: top; width: 100%;}
+.k_footer_rightright {display: inline-block; vertical-align: top; width: 100%; margin-top: 24px;}
+.k_footer_logo {width: 121px; height: 27px; margin-bottom: 8px;}
+.k_footer_info {width: 100%; min-height: 10px; font-size: 12px; line-height: 1.4em; color: white;}
+.k_footer_phone {position: relative; width: 100%; min-height: 20px; margin-top: 20px;}
+.k_footer_phone a {font-size: 20px; font-weight: bold; line-height: 1em; color: white;}
+.k_footer_call {position: absolute; top: 5px; left: 184px; min-width: 100px; min-height: 12px; font-size: 12px; line-height: 1em; color: white; text-decoration: underline; cursor: pointer;}
+.k_footer_contact {margin-top: 15px;}
+.k_footer_oferta {font-size: 10px; font-weight: 300; line-height: 1.2em; color: #c9c9c9;}
+.k_footer_privacy {margin-top: 30px; font-size: 12px; font-weight: 300; line-height: 1em; color: white; text-decoration: underline; cursor: pointer;}
+
+
+.jb_custom_banner1 {position: relative; display: inline-block; width: 100%; height: 100%; max-width: 920px; margin-right: 20px;}
+.jb_custom_block1 {position: absolute; left: 0px; top: 53px; width: 300px; min-height: 20px; text-align: left;}
+.jb_custom_block2 {position: absolute; right: 20px; top: 96px; width: 190px; min-height: 20px; text-align: right;}
+.jb_custom_block3 {position: absolute; right: 20px; top: 56px; width: 190px; min-height: 20px; text-align: right;}
+.jb_custom_block4 {position: absolute; right: 40px; top: 40px; width: 220px; min-height: 20px; text-align: right;}
+.jb_custom_block2 img, .jb_custom_block3 img, .jb_custom_block4 img {max-width: 100%;}
+.jb_custom_title1 {width: 100%; min-height: 20px; margin-bottom: 15px; font-size: 20px; font-weight: bold; line-height: 1.2em; color: white;}
+.jb_custom_text1 {width: 100%; min-height: 12px; font-size: 14px; font-weight: normal; line-height: 1.2em; color: white;}
+
+@media only screen and (min-width: 600px) {
+.k_header_menubase {width: 60%;}
+}
+
+@media only screen and (min-width: 720px) {
+.k_header_main {height: 105px; border-bottom: solid 1px #a4a4a4;}
+.k_header_rowmid {margin-top: 35px;}
+.k_header_logosmall {display: inline-block; height: 26px;}
+.k_header_logomob, .k_header_phonmob {display: none;}
+.k_header_citytitle {display: inline-block; vertical-align: middle; margin-left: 5px;}
+.k_header_cityvalue {margin-left: 10px;}
+.k_header_contact {display: inline-block; vertical-align: middle; margin-left: 15px; cursor: pointer;}
+.k_header_topright {display: block; position: absolute; right: 0px; top: -2px; min-width: 100px; text-align: right; line-height: 1em;}
+.k_header_toprightmob {display: none;}
+.k_header_phone {display: inline-block; vertical-align: middle; margin-left: 20px;}
+.k_header_search {width: 35%; margin-left: 25px;}
+.k_header_searchright {width: 54px; background: #fff; cursor: default;}
+.k_header_searchbtn {display: inline-block;}
+.k_header_cartblock {display: block; position: absolute; right: 0px; top: 9px; text-align: right; line-height: 1em;}
+.k_header_manico {display: inline-block;}
+.k_header_menu {height: 72px;}
+.k_header_menuline {height: 50px; margin-top: 11px;}
+.k_header_menuleft {margin-top: 9px;}
+.k_header_menuhidar {top: 22px;}
+.k_menu_popcat {max-width: 1440px; padding: 0 15px; min-height: 100px;}
+.k_menu_popleft {width: 260px;}
+.k_menu_poplrow {width: 100%; height: 56px; padding: 20px 0px 20px 35px; cursor: pointer;}
+.k_menu_poplrow:hover {background: #f7f7f7;}
+.k_menu_plract {background: #efefef;}
+.k_menu_popright {display: inline-block; vertical-align: top; width: 62%; min-height: 350px; border-left: solid 1px #a4a4a4;}
+.k_part_text {display: inline-block; vertical-align: middle; width: 190px; min-height: 12px; font-size: 14px; font-weight: normal; line-height: 1em; color: #000;}
+.k_part_arrow {display: inline-block; vertical-align: middle; width: 8px; height: 14px;}
+.k_part_arrow .cls-13 {stroke:#c1c0c0; stroke-width: 1px;}
+
+.k_bannertop_wrap {height: 350px;}
+.k_bannertop_slidin {width: 1440px;}
+
+.k_advert_block {height: 330px;}
+.k_advert_content {width: 690px; height: 295px;}
+.k_advert_blockbg {height: 295px; margin-top: 35px;}
+.k_advert_blocktxt {font-size: 35px;}
+.k_adbl_txt1 {top: 100px; left: 64px; line-height: 1.2em;}
+.k_adbl_txt2 {top: 100px; left: 64px; line-height: 1.2em;}
+.k_adbl_img1 {top: -35px; right: 0px; width: 296px; height: 346px;}
+.k_adbl_img2 {top: -75px; right: 30px; width: 352px; height: 353px;}
+.k_adbl_btn1 {bottom: 45px; left: 64px; width: 122px; height: 35px; padding-top: 7px; font-size: 14px;}
+.k_adbl_btn2 {bottom: 45px; left: 64px; width: 122px; height: 35px; padding-top: 7px; font-size: 14px;}
+
+.k_advert1 {display: none;}
+.k_advert2 {display: inline-block;}
+.k_advert3 {display: inline-block;}
+.k_advert4 {display: none;}
+
+.k_slider {height: 545px;}
+.k_slider_wrap {height: 545px;}
+.k_slider_content {width: 1946px; height: 545px;}
+.k_slider_block {width: 220px; height: 270px; margin-right: 20px; text-align: center; padding: 15px;}
+.k_slider_block:last-child {margin-right: 0;}
+.k_slider_image {width: 190px; height: 150px;}
+.k_slider_price {width: 190px; height: 30px; margin-top: 20px; font-size: 20px;}
+.k_slider_text {width: 190px; height: 35px; font-size: 14px; overflow: hidden;}
+.k_slider_sale {top: 15px; width: 86px; height: 32px; border-radius: 16px; padding-top: 3px; font-size: 24px;}
+.k_slider_new {top: 15px; width: 102px; height: 32px; border-radius: 16px; padding-top: 7px; font-size: 18px;}
+.k_slider_hidleft {width: 120px; height: 545px;}
+.k_slider_hidright {width: 120px; height: 545px;}
+.k_slider_roundleft {top: 230px; left: 4px; width: 64px; height: 64px;}
+.k_slider_roundright {top: 230px; right: 4px; width: 64px; height: 64px;}
+.k_slider_arrowleft {top: 21px; left: 25px; width: 14px; height: 22px;}
+.k_slider_arrowright {top: 21px; left: 27px; width: 14px; height: 22px;}
+
+.k_slider2 {width: 100%; height: 463px;}
+.k_slider2_wrap {width: 100%; height: 463px;}
+.k_slider2_content {width: 1825px; height: 463px;}
+.k_slider2_block {width: 330px; height: 200px; margin-right: 30px; margin-top: 15px; margin-bottom: 15px;}
+.k_slider2_block:last-child {margin-right: 0;}
+.k_slider2_image {width: 190px; height: 150px;}
+.k_slider2_price {width: 190px; height: 30px; text-align: left; margin-top: 20px; font-size: 20px; font-weight: bold;}
+.k_slider2_text {width: 190px; height: 35px; text-align: left; font-size: 14px; font-weight: normal;}
+.k_slider2_hidleft {width: 120px; height: 463px;}
+.k_slider2_hidright {width: 120px; height: 463px;}
+.k_slider2_roundleft {top: 196px; left: 3px; width: 64px; height: 64px;}
+.k_slider2_roundright {top: 196px; right: 3px; width: 64px; height: 64px;}
+.k_slider2_arrowleft {top: 21px; left: 25px; width: 14px; height: 22px;}
+.k_slider2_arrowright {top: 21px; left: 27px; width: 14px; height: 22px;}
+.k_main_title {width: 100%; height: 55px; margin-top: 25px; font-size: 26px;}
+.k_main_brand {width: 24%;}
+
+.k_card_infleft {margin-top: 0;}
+.k_card_titlemob h1 {font-size: 35px;}
+.k_card_imageblock {display: inline-block; vertical-align: top; width: 320px; min-height: 376px;}
+.k_card_mainimage {width: 320px; height: 320px;}
+.k_card_rightsmall {top: 18px; right: -25px; width: 320px; height: 350px; padding: 40px 35px;}
+.k_card_rightcontent {width: 240px; min-height: 150px;}
+.k_card_selpmob {display: none;}
+.k_card_butseld {display: inline-block;}
+.k_card_butbuy {width: 130px;}
+.k_rcprice {font-size: 35px;}
+.k_card_price {height: 81px; padding-top: 4px;}
+.k_card_price .k_status {margin-top: 10px; color: #74af17;}
+.k_card_actinmob {height: 62px; padding-top: 18px;}
+.k_card_actinbut {width: 100%; margin-top: 25px; text-align: center;}
+.k_card_actinqtx {display: inline-block; vertical-align: middle; width: 80px; text-align: left; font-size: 14px; font-weight: bold;}
+.k_menuitem {padding: 8px 19px 12px 19px;}
+.k_card_botcontent {width: 480px;}
+.k_card_banner {padding: 0 15px;}
+
+.k_footer_left {width: 100%;}
+.k_footer_right {width: 100%;}
+.k_footer_middle {width: 45%; margin-right: 5%;}
+.k_footer_rightright {width: 50%; margin-top: 0px;}
+.cls-15{fill:#3a3a3a;}
+
+.jb_custom_block1 {top: 125px;}
+.jb_custom_block2 {top: 28px; width: 395px;}
+.jb_custom_block3 {top: 28px; width: 395px; right: 30px;}
+.jb_custom_block4 {top: 18px; width: 320px; right: 30px;}
+.jb_custom_title1 {margin-bottom: 20px; font-size: 35px;}
+.jb_custom_text1 {font-size: 20px;}
+}
+
+@media only screen and (min-width: 840px) {
+.k_header_search {width: 44%; margin-left: 36px;}
+.k_header_menubasert {display: none;}
+.k_header_menuright {display: block;}
+.k_menu_popright {width: 67%;}
+}
+
+@media only screen and (min-width: 960px) {
+.k_header_logo {display: inline-block;}
+.k_header_logosmall {display: none;}
+.k_header_phone {display: inline-block; vertical-align: middle; margin-left: 30px;}
+.k_header_search {width: 42%; margin-left: 4%;}
+.k_header_searchmain:hover {border: solid 1px #f05a28;}
+.k_header_menuleft {width: 167px;}
+.k_header_mmenutext {font-size: 16px; font-weight: bold; color: #000;}
+.k_header_menuitem {padding: 18px 22px;}
+.k_menu_popright {width: 72%;}
+.k_advrow2 {display: none;}
+.k_advert1 {display: inline-block;}
+.k_advert2 {display: inline-block;}
+.k_advert3 {display: none;}
+.k_advert4 {display: none;}
+.k_main_brand {width: 16%;}
+.k_breadcrumbs {min-height: 39px;}
+.k_card_leftblock {position: relative; margin-bottom: 20px; border-radius: 5px; box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.15); z-index: 20;}
+.k_card_infleft {width: 54%; margin-top: 40px;}
+.k_card_rightmob, .k_card_rating, .k_card_vcode, .k_card_orn {display: block;}
+.k_card_rightsmall, .k_artmob {display: none;}
+.k_card_dellinmob {height: 60px; margin-top: 20px; padding: 20px; border-top: solid 1px #bfbfbf;}
+.k_card_dellinsoc {position: absolute; top: 14px; right: 20px; width: 200px; height: 30px; margin-right: 0; text-align: right;}
+.k_card_socico {display: inline-block; vertical-align: top; width: 28px; height: 28px; margin-left: 12px;}
+.k_card_dellinks {width: 100%; height: 37px; margin-top: 0px; text-align: left;}
+.k_card_botmenu {width: 915px;}
+.k_card_botcontent {display: none; width: 915px;}
+.k_card_botsubst {display: none;}
+.k_card_titlemob {width: 100%; min-height: 20px; margin-top: 14px;}
+.k_card_titlemob h1 {font-size: 20px; font-weight: normal;}
+.k_card_artmob {display: none;}
+.k_card_imageblock {width: 408px; min-height: 480px;}
+.k_card_mainimage {width: 404px; height: 404px;}
+.k_card_rightcontent {width: 290px; min-height: 200px; margin: 23px auto 40px auto;}
+.k_card_price {height: 61px; padding-top: 4px;}
+.k_card_price .k_status {margin-top: 10px; color: #74af17;}
+.k_card_inrowmid {display: none;}
+.k_card_inrowbot {border-radius: none; box-shadow: none;}
+.k_card_compartitle {height: 43px;}
+.k_card_botmenu {width: 100%; margin-top: 0; border-bottom: solid 1px #bfbfbf;}
+.k_card_botmenu .k_active {background: #494949; color: #fff; cursor: default;}
+.k_card_botcontent {display: none; width: 100%; min-height: 190px; margin-top: 27px; margin-left: 0; padding: 0; background: #fff; border-radius: 0;}
+.k_card_botcontent .k_leftblock {width: 390px;}
+.k_card_botcontent .k_rightblock {width: 440px;}
+.k_card_botcontent .k_title {display: block; width: 100%; height: 16px; font-weight: bold; line-height: 1em;}
+.k_card_botcontent .k_value {display: block; width: 100%; margin-top: 4px; font-weight: 400; line-height: 1.4em;}
+.k_card_partab {width: 100%; min-height: 20px; margin-top: 12px}
+.k_card_partab .k_row {width: 100%; min-height: 31px; padding: 9px 0; border-top: solid 1px #bfbfbf; cursor: pointer;}
+.k_card_partab .k_row:hover {background: #f9f9f9;}
+.k_card_anblock .k_leftblock {width: 180px; margin-left: 0px; margin-top: 32px;}
+.k_card_anblock .k_rightblock {width: 270px; margin-top: 15px; margin-left: 10px;}
+.k_card_anblock .k_middleblock {width: 400px; margin-top: 32px; padding-bottom: 30px;}
+.k_card_manblock .k_leftblock {width: 206px;}
+.k_card_manblock .k_rightblock {min-width: 660px;}
+
+.k_menuitem {vertical-align: top; min-width: 20px; border-radius: 0; padding: 14px 20px 13px 20px; font-size: 14px; line-height: 1em; background: #fff; color: #000; border-left: solid 1px #bfbfbf; cursor: pointer;}
+.k_menuitem:first-child {border-left: none;}
+.k_menuitem:hover {background: #ededed;}
+.k_menuitmob {display: inline-block;}
+
+.k_main_delivimg {background-image: url(https://jboxparts.ru/image/catalog/banner/delivery.jpg); background-repeat: no-repeat; background-size: cover; background-position: right;}
+
+.k_footer_content {padding: 0 30px;}
+}
+@media only screen and (min-width: 1080px) {
+.k_menu_popright {width: 75%;}
+.k_card_manblock .k_rightblock {min-width: 780px;}
+}
+@media only screen and (min-width: 1200px) {
+.k_header_cartinfo {display: inline-block; vertical-align: middle; margin-left: 6px; width: 82px; text-align: right; cursor: pointer;}
+.k_header_search {width: 49%; margin-left: 50px;}
+.k_header_manico {display: none;}
+.k_menu_popright {width: 77%;}
+.k_header_menuvk, .k_header_menuvkico, .k_header_menuigico {display: inline-block;}
+
+.k_slider {height: 270px;}
+.k_slider_wrap {height: 270px; overflow-x: hidden;}
+.k_slider_content {width: 3890px; height: 270px;}
+.k_slider_block {width: 220px; height: 270px; margin-right: 20px; text-align: center; padding: 15px;}
+.k_slider_block:last-child {margin-right: 0;}
+.k_slider_image {width: 190px; height: 150px;}
+.k_slider_price {width: 190px; height: 30px; margin-top: 20px; font-size: 20px;}
+.k_slider_text {width: 190px; height: 35px; font-size: 14px; overflow: hidden;}
+.k_slider_sale {width: 86px; height: 32px; border-radius: 16px; padding-top: 3px; font-size: 24px;}
+.k_slider_new {width: 102px; height: 32px; border-radius: 16px; padding-top: 7px; font-size: 18px;}
+.k_slider_hidleft {width: 120px; height: 270px;}
+.k_slider_hidright {width: 120px; height: 270px;}
+.k_slider_roundleft {top: 100px; left: 4px; width: 64px; height: 64px;}
+.k_slider_roundright {top: 100px; right: 4px; width: 64px; height: 64px;}
+
+.k_slider2 {width: 100%; height: 200px;}
+.k_slider2_wrap {height: 200px; overflow-x: hidden;}
+.k_slider2_content {position: relative; width: 3620px; height: 200px; text-align: left;}
+.k_slider2_block {width: 330px; height: 200px; margin-right: 30px; margin-top: 0; margin-bottom: 0;}
+.k_slider2_block:last-child {margin-right: 0;}
+.k_slider2_image {width: 190px; height: 150px;}
+.k_slider2_price {width: 190px; height: 30px; text-align: left; margin-top: 20px; font-size: 20px;}
+.k_slider2_text {width: 190px; height: 35px; text-align: left; font-size: 14px;}
+.k_slider2_hidleft {width: 120px; height: 200px;}
+.k_slider2_hidright {width: 120px; height: 200px;}
+.k_slider2_roundleft {top: 68px; left: 3px; width: 64px; height: 64px; cursor: pointer;}
+.k_slider2_roundright {top: 68px; right: 3px; width: 64px; height: 64px; cursor: pointer;}
+.k_card_manblock .k_rightblock {min-width: 900px;}
+
+.k_footer_left {width: 16%;}
+.k_footer_right {width: 83%; margin-top: 0;}
+.k_footer_middle {width: 45%; margin-right: 10%;}
+.k_footer_rightright {width: 446px;}
+}
+@media only screen and (min-width: 1320px) {
+.k_menu_popright {width: 79%;}
+.k_card_manblock .k_rightblock {min-width: 1020px;}
+}
+@media only screen and (min-width: 1440px) {
+.k_header_search {width: 800px; margin-left: 50px;}
+.k_header_searchmain {width: 800px;}
+.k_header_searchin {position: relative; width: 767px; height: 36px; margin-left: 2px; margin-top: 1px; border: none; overflow: hidden;}
+.k_header_searchin input {width: 771px; height: 38px; margin-left: -1px; margin-top: -1px; border: none; padding: 8px; font-size: 15px; color: #000; box-shadow: none; border: none; background: #fff;}
+.k_header_menuleft {width: 167px;}
+.k_menu_popleft {width: 270px;}
+.k_menu_popright {width: 1140px;}
+.k_mmenu_column {width: 360px; padding-left: 75px;}
+.k_mmenu_title {padding-left: 75px;}
+.k_mmenu_cblock {width: 285px;}
+.k_mmenu_cttl {margin-top: 40px;}
+.k_main_delivin {text-align: left; width: 880px;}
+
+.k_advert_block {width: 690px; height: 330px;}
+.k_advert_content {width: 690px; height: 295px;}
+.k_advert1 {margin: 15px 20px 15px 0px;}
+.k_main_brand {width: 230px;}
+.k_breadcrumbs {width: 100%; height: 39px; margin-top: 30px; padding: 0 15px;}
+.k_breadcrumbs a {font-size: 14px; font-weight: 300; color: #000;}
+.k_card_contentrow {padding: 0 15px;}
+.k_card_leftblock {display: inline-block; vertical-align: top; width: 1018px; margin-bottom: 20px;}
+.k_card_rightblock {position: relative; display: inline-block; vertical-align: top; width: 392px; min-height: 100px; background: #fff; border-radius: 5px; z-index: 10;}
+.k_card_infoblock {display: inline-block;}
+.k_card_inrow {width: 940px; min-height: 20px; margin: 38px 10px 10px 40px; padding: 0;}
+.k_card_infleft, .k_card_rightmob {display: none;}
+.k_card_vcode {margin-top: 27px;}
+.k_card_onums {margin-top: 16px;}
+.k_card_rightcontent {width: 290px; min-height: 200px; margin: 50px auto;}
+.k_card_dellinmob {display: none;}
+.k_card_dellinks {width: 100%; height: 37px; margin-top: 14px;}
+.k_card_botmenu {width: 928px; border-bottom: solid 1px #bfbfbf;}
+.k_card_botcontent {display: none; width: 928px; min-height: 190px; margin-top: 27px;}
+.k_card_botcontent .k_leftblock {width: 390px;}
+.k_card_botcontent .k_rightblock {width: 440px;}
+.k_card_botcontent .k_title {height: 16px; font-weight: bold; line-height: 1em;}
+.k_card_botcontent .k_value {margin-top: 4px; font-weight: 400; line-height: 1.4em;}
+.k_card_partab {width: 100%; min-height: 20px; margin-top: 12px}
+.k_card_partab .k_row {width: 100%; min-height: 31px; padding: 9px 0; border-top: solid 1px #bfbfbf; cursor: pointer;}
+.k_card_partab .k_row:hover {background: #f9f9f9;}
+.k_card_banner {padding: 0;}
+.k_card_anblock .k_leftblock {width: 190px; margin-left: 0px; margin-top: 32px;}
+.k_card_anblock .k_rightblock {width: 270px; margin-top: 15px; margin-left: 0px;}
+.k_card_anblock .k_middleblock {width: 400px; margin-top: 32px; padding-bottom: 30px;}
+/*.k_card_anprice {width: 240px; height: 200px; margin-left: 30px; margin-top: 10px; border-radius: 5px; background: #fff; box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);} */
+.k_card_manblock .k_leftblock {width: 206px;}
+.k_card_manblock .k_rightblock {min-width: 680px;}
+.k_footer_content {margin: 72px 0; padding: 0 15px;}
+.k_footer_left {width: 240px;}
+.k_footer_right {width: 1145px; margin-top: 0;}
+.k_footer_middle {width: 695px; margin-right: 0;}
+.k_footer_rightright {width: 446px;}
+.k_fullpad {width: 284px; padding-left: 0;}
+
+}
+
+.k_fullmenu {width: 100%; border: none;}
+.k_inline_top {display: inline-block; vertical-align: top;}
+.k_inline_mid {display: inline-block; vertical-align: middle;}
+
+.k_hidden {display: none;}
+.k_visible {display: block;}
+.k_inblock {display: inline-block;}
