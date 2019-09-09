@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/style/jb_common.css">
     <link rel="stylesheet" href="assets/style/style.css">
     <link rel="stylesheet" href="assets/style/k_main.css">
+    <link rel="stylesheet" href="assets/style/magnify.css">
     <link rel="stylesheet" href="./scss/category_style.scss">
     <link
             rel="stylesheet"
@@ -46,7 +47,7 @@
                                 <div class="parts-models_item-subtitle jb_ml20 jb_mb30">
                                     Модели
                                 </div>
-                                <ul id="js_parts-models_list" class="parts-models_list">
+                                <ul id="js_parts-models_list" class="parts-models_list jb_pr35">
                                     <li class="parts-models_item parts-models_item-group-title">
                                         Двигатель и коробка
                                     </li>
@@ -214,13 +215,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="parts-models_section-main">
+                    <div class="parts-models_section-main magnify">
                         <img
                                 src="assets/images/00dffef3da1479ebf06aa1dc722dbb88.jpg"
+                                id="js-zoomple-schema"
                                 alt=""
+                                data-magnify-src="http://jboxparts.surge.sh/images/0aeeed7f7160af779f71be3c55d2dbe2.png"
                                 class="parts-models_section-schema-img"
                         >
-
                     </div>
                 </section>
 
@@ -247,7 +249,8 @@
                                         <div class="parts-models_item-product-count">1 шт.</div>
                                         <div class="parts-models_item-price">71 500 руб.</div>
                                         <div class="parts-models_item-buy">
-                                            <img src="assets/images/buy-icon.svg" alt="" class="parts-models_item-buy-icon">
+                                            <img src="assets/images/buy-icon.svg" alt=""
+                                                 class="parts-models_item-buy-icon">
                                             Купить
                                         </div>
                                     </div>
@@ -265,7 +268,8 @@
                                         <div class="parts-models_item-product-count">1 шт.</div>
                                         <div class="parts-models_item-price">71 500 руб.</div>
                                         <div class="parts-models_item-buy">
-                                            <img src="assets/images/buy-icon.svg" alt="" class="parts-models_item-buy-icon">
+                                            <img src="assets/images/buy-icon.svg" alt=""
+                                                 class="parts-models_item-buy-icon">
                                             Купить
                                         </div>
                                     </div>
@@ -407,7 +411,8 @@
                                         <div class="parts-models_item-product-count">1 шт.</div>
                                         <div class="parts-models_item-price">71 500 руб.</div>
                                         <div class="parts-models_item-buy">
-                                            <img src="assets/images/buy-icon.svg" alt="" class="parts-models_item-buy-icon">
+                                            <img src="assets/images/buy-icon.svg" alt=""
+                                                 class="parts-models_item-buy-icon">
                                             Купить
                                         </div>
                                     </div>
@@ -425,7 +430,8 @@
                                         <div class="parts-models_item-product-count">1 шт.</div>
                                         <div class="parts-models_item-price">71 500 руб.</div>
                                         <div class="parts-models_item-buy">
-                                            <img src="assets/images/buy-icon.svg" alt="" class="parts-models_item-buy-icon">
+                                            <img src="assets/images/buy-icon.svg" alt=""
+                                                 class="parts-models_item-buy-icon">
                                             Купить
                                         </div>
                                     </div>
@@ -443,7 +449,8 @@
                                         <div class="parts-models_item-product-count">1 шт.</div>
                                         <div class="parts-models_item-price">71 500 руб.</div>
                                         <div class="parts-models_item-buy">
-                                            <img src="assets/images/buy-icon.svg" alt="" class="parts-models_item-buy-icon">
+                                            <img src="assets/images/buy-icon.svg" alt=""
+                                                 class="parts-models_item-buy-icon">
                                             Купить
                                         </div>
                                     </div>
@@ -452,47 +459,49 @@
 
                         </div>
                     </div>
-                    <div class="parts-models_section-sidebar">
-                        <div class="parts_card parts_card--l jb_mb40">
-                            <h2 class="typo typo-l typo--gray typo--bold jb_tl jb_mb30">
-                                Нужна помощь?
-                            </h2>
-                            <form action="">
-                                <input type="text" name="" placeholder="Ваше имя" class=" jb_mb20 text-field">
-                                <input type="text" name="" placeholder="Электронная почта" class=" jb_mb20 text-field">
-                                <input type="text" name="" placeholder="Телефон" class=" jb_mb20 text-field">
-                                <textarea name="" placeholder="Опишите что найти"
-                                          class=" jb_mb30 text-field"></textarea>
-                                <button class="button button--round">
-                                    Отправить
-                                </button>
-                            </form>
-                        </div>
+                    <div class="parts-models_section-sidebar" data-sticky-container>
+                        <div data-margin-top="20" class="js-sticky">
+                            <div class="parts_card parts_card--l jb_mb40">
+                                <h2 class="typo typo-l typo--gray typo--bold jb_tl jb_mb30">
+                                    Нужна помощь?
+                                </h2>
+                                <form action="">
+                                    <input type="text" name="" placeholder="Ваше имя" class=" jb_mb20 text-field">
+                                    <input type="text" name="" placeholder="Электронная почта"
+                                           class=" jb_mb20 text-field">
+                                    <input type="text" name="" placeholder="Телефон" class=" jb_mb20 text-field">
+                                    <textarea name="" placeholder="Опишите что найти"
+                                              class=" jb_mb30 text-field"></textarea>
+                                    <button class="button button--round">
+                                        Отправить
+                                    </button>
+                                </form>
+                            </div>
 
-                        <div class="typo typo_m">
-                            Наш телефон
+                            <div class="typo typo_m">
+                                Наш телефон
+                            </div>
+                            <a class="typo typo_xl typo--no-underline typo--bold jb_mb20" href="tel:+79818035395">
+                                +7 981 803 5395
+                            </a>
+                            <ul>
+                                <li>
+                                    <a class="typo typo_m typo--l-gray" href="">Обратный звонок</a>
+                                </li>
+                                <li>
+                                    <a class="typo typo_m typo--l-gray" href="">Контакты</a>
+                                </li>
+                                <li>
+                                    <a class="typo typo_m typo--l-gray" href="">Гарантия</a>
+                                </li>
+                                <li>
+                                    <a class="typo typo_m typo--l-gray" href="">О производителе BRP</a>
+                                </li>
+                            </ul>
                         </div>
-                        <a class="typo typo_xl typo--no-underline typo--bold jb_mb20" href="tel:+79818035395">
-                            +7 981 803 5395
-                        </a>
-                        <ul>
-                            <li>
-                                <a class="typo typo_m typo--l-gray" href="">Обратный звонок</a>
-                            </li>
-                            <li>
-                                <a class="typo typo_m typo--l-gray" href="">Контакты</a>
-                            </li>
-                            <li>
-                                <a class="typo typo_m typo--l-gray" href="">Гарантия</a>
-                            </li>
-                            <li>
-                                <a class="typo typo_m typo--l-gray" href="">О производителе BRP</a>
-                            </li>
-                        </ul>
                     </div>
 
                 </section>
-
 
                 <module href="/templates/deliveryInfo.html">
                     deliveryInfo
@@ -503,6 +512,7 @@
     </div>
 </div>
 
+<script src="assets/scripts/jquery-3.2.1.min.js"></script>
 <script src="assets/scripts/index.js"></script>
 
 
